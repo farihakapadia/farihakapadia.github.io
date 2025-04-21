@@ -1,1 +1,0 @@
-# farihakapadia.github.io
