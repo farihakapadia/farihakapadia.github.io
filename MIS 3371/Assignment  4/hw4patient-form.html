@@ -2,9 +2,9 @@
 <!--
 Program name: hw4patient-form.html
 Author: Fariha Kapadia
-Date created: 03/06/2025
-Date last edited: 04/12/2025
-Version: 3.5
+Date created: 04/23/2025
+Date last edited: 04/25/2025
+Version: 6.2
 Description: A patient registration form for a fictional hospital called River Park Medical.
 -->
 
@@ -47,6 +47,35 @@ Description: A patient registration form for a fictional hospital called River P
                 <table>
                     <tr>
                         <th colspan="4">New Patient Sign Up</th>
+                    </tr>
+
+                    <!-- welcome messages --> 
+
+                    <center>
+                        <span id="welcome1"></span>
+                        <span id="welcome2"></span>
+                    </center>
+
+                    <!-- iframe --> 
+
+                    <div class="iframe-container">
+                        <iframe class="frame" src="hw4iframe.html" frameborder="0"></iframe>
+                    </div>
+
+                    <!-- remember me box --> 
+
+                    <tr>
+                        <td class="td1">
+                            <label for="remember-me">Remember Me:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="checkbox"
+                                id="remember-me"
+                                name="remember-me"
+                                checked
+                            />
+                        </td>
                     </tr>
 
                     <!-- first name -->
@@ -537,9 +566,14 @@ Description: A patient registration form for a fictional hospital called River P
     <!-- shows user input -->
 
     <div id="showInput"></div>
-<script src="hw4patient-form.js" defer></script>
+
+    <script src="hw4patient-form.js" defer></script>
 
     <!-- end of form -->
-    
+
+    <footer>
+        <p id="footer">&#169 2025 River Park Medical | 4350 Riverstone Dr | <a href="insert.link.here" target="_blank" rel="noopener noreferrer">Contact Us!</a></p>
+    </footer>
+
 </body>
 </html> 
