@@ -1,8 +1,8 @@
 /*
-Program name: hw4patient-form.js
+Program name: hw4style.css
 Author: Fariha Kapadia
-Date created: 03/06/2025
-Date last edited:04/12/2025
+Date created: 04/23/2025
+Date last edited: 04/25/2025
 Version: 2.8
 Description: The CSS for a patient registration form for a fictional hospital called River Park Medical.
 */
@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f7f9fc; 
+    background: #f7f9fc;
     margin: 0;
     height: 100%;
     min-height: 100vh;
@@ -24,10 +24,41 @@ body {
 
 header {
     width: 100%;
-    background: #3a6b85; 
+    background: #3a6b85;
     color: white;
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+header td {
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+#logo {
+    width: 120px;
+}
+
+header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* form styling */
@@ -58,7 +89,7 @@ td {
 th {
     padding: 10px;
     text-align: left;
-    background: #f1f5f9;
+    background: #e3eaf0;
     font-weight: bold;
 }
 
@@ -82,7 +113,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-    border-color: #007bff;
+    border-color: #3a6b85;
     outline: none;
 }
 
@@ -107,8 +138,8 @@ label {
 
 input[type="button"],
 input[type="reset"],
-input[type="submit"]{
-    background-color: #007BFF;
+input[type="submit"] {
+    background-color: #3a6b85;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -124,7 +155,7 @@ input[type="submit"]{
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #2b5066;
 }
 
 /* footer styling */
@@ -144,7 +175,7 @@ input[type="submit"]:hover {
 /* alert styling */
 
 #alert-box {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -158,7 +189,7 @@ input[type="submit"]:hover {
 
 #alert-content {
     position: center;
-    background-color: #f0f4f8; 
+    background-color: #f0f4f8;
     border-radius: 12px;
     width: 300px;
     padding: 20px 30px;
@@ -169,11 +200,11 @@ input[type="submit"]:hover {
 }
 
 #close-alert {
-    background-color: #007BFF; 
+    background-color: #3a6b85;
     border-width: 1px;
     border-style: solid;
     color: white;
-    border-color: #0056b3;
+    border-color: #2b5066;
     font-size: 16px;
     font-weight: bold;
     height: 40px;
@@ -187,5 +218,48 @@ input[type="submit"]:hover {
 }
 
 #close-alert:hover {
-    background-color: #0056b3;
+    background-color: #2b5066;
+}
+
+/* welcome message styling */
+
+
+#welcome1, #welcome2 {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+#welcome2 a {
+    color: #3a6b85;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#welcome2 a:hover {
+    text-decoration: underline;
+}
+
+/* iframe styling */
+
+.iframe-container {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 10;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
